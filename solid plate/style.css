@@ -1,0 +1,386 @@
+body {
+  margin: 0;
+}
+.temp-back {
+  min-width: 800px;
+  max-width: 1340px;
+  opacity: 0.4;
+  position: absolute;
+}
+.nav {
+  height: 85px;
+  width: 1340px;
+  display: flex;
+  justify-content: space-between;
+}
+.nav .nav-logo {
+  margin-top: 25px;
+  margin-left: 25px;
+  background-image: url('img/logo.jpg');
+  width: 200px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.nav .nav-menu {
+  width: 540px;
+  margin-top: 32px;
+  margin-left: 130px;
+  margin-right: 155px;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 16.5px;
+  letter-spacing: 0.15px;
+  z-index: 2;
+  color: black;
+}
+.nav .nav-menu .nav-menu-item {
+  cursor: pointer;
+}
+.nav .nav-menu .nav-menu-item:hover {
+  color: green;
+}
+.nav .btn {
+  margin-top: 20px;
+  margin-right: 25px;
+  border-radius: 20px;
+  height: 45px;
+  width: 190px;
+  z-index: 2;
+  background-color: green;
+  border-color: green;
+}
+.nav .btn:hover {
+  background-color: white;
+  color: black;
+}
+.building {
+  height: 591px;
+  width: 1340px;
+}
+.building .jumbotron-content {
+  height: 177px;
+  width: 100%;
+  margin-top: 90px;
+  display: flex;
+}
+.building .jumbotron-content .jumbotron-content-first-block {
+  width: 32.4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.building .jumbotron-content .jumbotron-content-first-block .jumbotron-content-first-block-title {
+  font-size: 19.5px;
+  margin-left: 70px;
+}
+.building .jumbotron-content .jumbotron-content-first-block .jumbotron-content-first-block-descr {
+  text-align: center;
+  font-size: 12px;
+  margin-left: 50px;
+  margin-right: 90px;
+}
+.building .jumbotron-content .jumbotron-content-first-block .jumbotron-content-first-block-button {
+  display: flex;
+  justify-content: center;
+  margin-right: 50px;
+}
+.building .jumbotron-content .jumbotron-content-second-block {
+  width: 35.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.building .jumbotron-content .jumbotron-content-second-block .jumbotron-content-second-block-title {
+  font-size: 19.5px;
+  margin-left: 120px;
+}
+.building .jumbotron-content .jumbotron-content-second-block .jumbotron-content-second-block-descr {
+  text-align: center;
+  font-size: 12px;
+  margin-left: 90px;
+  margin-right: 70px;
+}
+.building .jumbotron-content .jumbotron-content-second-block .jumbotron-content-second-block-button {
+  display: flex;
+  justify-content: center;
+}
+.building .jumbotron-content .jumbotron-content-third-block {
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.building .jumbotron-content .jumbotron-content-third-block .jumbotron-content-third-block-title {
+  font-size: 19.5px;
+  margin-left: 120px;
+}
+.building .jumbotron-content .jumbotron-content-third-block .jumbotron-content-third-block-descr {
+  text-align: center;
+  font-size: 12px;
+  margin-left: 100px;
+  margin-right: 40px;
+}
+.building .jumbotron-content .jumbotron-content-third-block .jumbotron-content-third-block-button {
+  display: flex;
+  justify-content: center;
+  margin-left: 40px;
+}
+.building .display-3 {
+  margin-left: 300px;
+  margin-right: 300px;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Comfortaa', cursive;
+  font-size: 60px;
+  line-height: 67px;
+}
+.building .lead {
+  display: flex;
+  justify-content: center;
+  width: 170px;
+  height: 50px;
+}
+.building .lead .btn {
+  width: 170px;
+  height: 50px;
+  background-color: green;
+  border-color: green;
+  border: 2px solid green;
+  border-radius: 20px;
+  z-index: 2;
+  overflow: hidden;
+  display: block;
+  transition: all 500ms ease;
+}
+.building .lead .btn:hover {
+  width: 170px;
+  box-shadow: inset 0 0 0 1px green;
+  background: rgba(0, 0, 0, 0);
+}
+.building .card-img-top {
+  height: 551px;
+  width: 445px;
+}
+.advantage {
+  height: 505px;
+  width: 1340px;
+  margin-top: 70px;
+}
+.advantage .advantage-title {
+  text-align: center;
+  font-size: 34px;
+}
+.advantage .carousel {
+  margin-top: 36px;
+  width: 1340px;
+}
+.advantage .carousel .carousel-item img {
+  height: 420px;
+  width: 100%;
+}
+.tagline {
+  height: 190px;
+  width: 1340px;
+  padding-top: 70px;
+  text-align: center;
+  font-size: 34px;
+}
+.about-company {
+  height: 260px;
+  width: 640px;
+  margin-top: 77px;
+  margin-bottom: 85px;
+  margin-left: 350px;
+  margin-right: 320px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.about-company .about-company-title {
+  text-align: center;
+  font-size: 32px;
+  letter-spacing: 1px;
+}
+.about-company .about-company-descr {
+  font-size: 11px;
+}
+.about-company .about-company-button {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
+.about-company .about-company-button .btn {
+  width: 160px;
+  border-radius: 20px;
+  z-index: 2;
+}
+.our-industry {
+  height: 475px;
+  width: 1090px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-top: 175px;
+  margin-left: 125px;
+  margin-right: 210px;
+  margin-bottom: 143px;
+}
+.our-industry .our-industry-title {
+  text-align: center;
+  font-size: 33px;
+}
+.our-industry .our-industry-gallery {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.our-industry .our-industry-gallery .card-img {
+  height: 270px;
+  width: 250px;
+}
+.our-industry .our-industry-gallery .text-muted {
+  background-color: white;
+  height: 100px;
+}
+.our-industry .our-industry-button {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
+.our-industry .our-industry-button .btn {
+  border-radius: 20px;
+  width: 230px;
+  z-index: 2;
+}
+.solid-plate {
+  height: 307px;
+  width: 800px;
+  margin-top: 80px;
+  margin-left: 310px;
+  margin-right: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.solid-plate .solid-plate-title {
+  font-size: 32px;
+  margin-left: 52px;
+  letter-spacing: 1px;
+}
+.solid-plate .solid-plate-descr {
+  font-size: 11px;
+  margin-top: 19px;
+}
+.solid-plate .solid-plate-button {
+  margin-left: 290px;
+  margin-top: 8px;
+}
+.solid-plate .solid-plate-button .btn {
+  width: 140px;
+  height: 47px;
+  color: black;
+  background-color: white;
+  border-radius: 20px;
+  border-color: green;
+  z-index: 2;
+}
+.feedback {
+  height: 587px;
+  width: 535px;
+  margin-left: 400px;
+  margin-top: 70px;
+  margin-right: 400px;
+  margin-bottom: 78px;
+  font-size: 12px;
+}
+.feedback .feedback-title {
+  height: 90px;
+  text-align: center;
+  padding-top: 28px;
+  letter-spacing: 0.17px;
+}
+.feedback .feedback-form {
+  margin-left: 85px;
+  margin-top: 23px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2;
+}
+.feedback .form-control {
+  width: 370px;
+  height: 42px;
+  border-radius: 20px;
+}
+.feedback #exampleTextarea {
+  height: 120px;
+}
+.feedback .input-group {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  width: 370px;
+}
+.feedback .btn {
+  margin-left: 105px;
+  width: 155px;
+  height: 49px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 16px;
+  font-weight: bold;
+  z-index: 2;
+}
+.feedback .button-send {
+  margin-top: 5px;
+}
+footer {
+  height: 255px;
+  width: 1340px;
+}
+footer .footer-content {
+  height: 183px;
+  width: 540px;
+  margin-bottom: 30px;
+  margin-left: 400px;
+  margin-right: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer-content .footer-content-item {
+  background-image: url('img/logo.jpg');
+  width: 200px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+footer .footer-content .footer-content-nav {
+  height: 20px;
+  width: 540px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-content .footer-content-nav .footer-content-nav-item {
+  cursor: pointer !important;
+}
+footer .footer-content .footer-content-icons {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  width: 130px;
+  cursor: pointer;
+}
+footer .footer-content .footer-content-icons .fa {
+  border-radius: 1px solid black;
+}
+footer .made-by-web-progress {
+  height: 29px;
+  width: 1340px;
+  padding-top: 12px;
+  font-size: 13px;
+  letter-spacing: 0.2px;
+  text-align: center;
+}

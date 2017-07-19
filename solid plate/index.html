@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <link rel="stylesheet" href="content/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <image class="temp-back" src=mainpage.jpg>
+        <div class="nav">
+            <div class="nav-logo"></div>
+            <div class="nav-menu">
+                <div class="nav-menu-item">главная</div>
+                <div class="nav-menu-item">о компании</div>
+                <div class="nav-menu-item">фундаменты</div>
+                <div class="nav-menu-item">услуги</div>
+                <div class="nav-menu-item">работы</div>
+                <div class="nav-menu-item">контакты</div>
+            </div>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap" style="cursor:pointer">
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                заявка на расчет</button>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="recipient-name" class="form-control-label">E-mail:</label>
+                                    <input type="text" class="form-control" id="recipient-name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="message-text" class="form-control-label">Комментарий:</label>
+                                    <textarea class="form-control" id="message-text"></textarea>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                            <button type="button" class="btn btn-primary" id="button">Отправить заявку</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="building">
+            <div class="jumbotron">
+                <h1 class="display-3">СТРОИТЕЛЬСТВО ФУНДАМЕНТОВ</h1>
+                <div class="jumbotron-content">
+                    <div class="jumbotron-content-first-block">
+                        <div class="jumbotron-content-first-block-title">Монолитный фундамент</div>
+                        <div class="jumbotron-content-first-block-descr">
+                            Плиточный фундамент отлично подходит для жилых и не жилых помещений, особенно в том случае, если вы не планируете строить подвал
+                        </div>
+                        <div class="jumbotron-content-first-block-button">
+                            <div class="lead">
+                                <a class="btn btn-primary btn-lg" href="#" role="button" style="cursor:pointer">
+                                    <i class="fa fa-long-arrow-right" aria-hidden="true"></i> подробнее
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jumbotron-content-second-block">
+                        <div class="jumbotron-content-second-block-title">Ленточный фундамент</div>
+                        <div class="jumbotron-content-second-block-descr">
+                            Плиточный фундамент отлично подходит для жилых и не жилых помещений, особенно в том случае, если вы не планируете строить подвал
+                        </div>
+                        <div class="jumbotron-content-second-block-button">
+                            <div class="lead">
+                                <a class="btn btn-primary btn-lg" href="#" role="button" style="cursor:pointer">
+                                    <i class="fa fa-long-arrow-right" aria-hidden="true"></i> подробнее
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jumbotron-content-third-block">
+                        <div class="jumbotron-content-third-block-title">Цокольный фундамент</div>
+                        <div class="jumbotron-content-third-block-descr">
+                            Плиточный фундамент отлично подходит для жилых и не жилых помещений, особенно в том случае, если вы не планируете строить подвал
+                        </div>
+                        <div class="jumbotron-content-third-block-button">
+                            <div class="lead">
+                                <a class="btn btn-primary btn-lg" href="#" role="button" style="cursor:pointer">
+                                    <i class="fa fa-long-arrow-right" aria-hidden="true"></i> подробнее
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="advantage">
+            <div class="advantage-title">Преимущества</div>
+            <div class="advantage-content">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <img class="d-block img-fluid" src="http://placehold.it/600/24f355" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid" src="http://placehold.it/600/24f355" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid" src="http://placehold.it/600/24f355" alt="Third slide">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="tagline">Мы любим создавать, поэтому делаем это качественно!</div>
+        <div class="about-company">
+            <div class="about-company-title">О компании</div>
+            <div class="about-company-descr">
+                Не следует, однако забывать, что рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании форм развития. Значимость этих проблем настолько очевидна, что сложившаяся структура организации способствует подготовки и
+                реализации дальнейших направлений развития. Повседневная практика показывает, что дальнейшее развитие различных форм деятельности требуют определения и уточнения существенных финансовых и административных условий. Разнообразный и богатый
+                опыт дальнейшее развитие различных форм деятельности влечет за собой процесс внедрения и модернизации дальнейших направлений развития. Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности
+                требуют от нас анализа систем массового участия.
+            </div>
+            <div class="about-company-button">
+                <button type="button" class="btn btn-secondary" style="cursor:pointer">
+                    <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                    Подробнее
+            </button>
+            </div>
+        </div>
+        <div class="our-industry">
+            <div class="our-industry-title">Наши работы</div>
+            <div class="our-industry-gallery">
+                <div class="card card-inverse">
+                    <img class="card-img" src="http://placehold.it/600/24f355" alt="Card image">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <div class="card card-inverse">
+                    <img class="card-img" src="http://placehold.it/600/24f355" alt="Card image">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <div class="card card-inverse">
+                    <img class="card-img" src="http://placehold.it/600/24f355" alt="Card image">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <div class="card card-inverse">
+                    <img class="card-img" src="http://placehold.it/600/24f355" alt="Card image">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="our-industry-button">
+                <button type="button" class="btn btn-success" style="cursor:pointer">
+                    <i class="fa fa-long-arrow-right" aria-hidden="true"></i>cмотреть все работы</button>
+            </div>
+        </div>
+        <div class="solid-plate">
+            <div class="solid-plate-title">Фундамент монолитная плита под ключ</div>
+            <div class="solid-plate-descr">
+                Не следует, однако забывать, что рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании форм развития. Значимость этих проблем настолько очевидна, что сложившаяся структура организации способствует подготовки и
+                реализации дальнейших направлений развития. Повседневная практика показывает, что дальнейшее развитие различных форм деятельности требуют определения и уточнения существенных финансовых и административных условий. Разнообразный и богатый
+                опыт дальнейшее развитие различных форм деятельности влечет за собой процесс внедрения и модернизации дальнейших направлений развития. Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности
+                требуют от нас анализа систем массового участия.
+            </div>
+            <div class="solid-plate-button">
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                развернуть
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+            </button>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-block">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="feedback">
+            <div class="feedback-title">
+                <h2>Обратная связь</h2>
+                Пишите нам, если у вас есть вопросы
+            </div>
+            <div class="feedback-form">
+                <form>
+                    <div class="form-group row">
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPassword" style="cursor:pointer" placeholder="Ваше имя">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPassword" style="cursor:pointer" placeholder="Ваш телефон">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPassword" style="cursor:pointer" placeholder="Ваш E-mail">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" id="exampleTextarea" placeholder="Ваше сообщение" rows="5"></textarea>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon1">
+                            <i class="fa fa-plus" aria-hidden="true"></i>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Прикрепить файл" aria-describedby="basic-addon1">
+                    </div>
+                </form>
+                <button type="button" class="btn btn-success" id="button">
+                    <i class="fa fa-long-arrow-right fa-2x" aria-hidden="true"></i>
+                    <div class="button-send">отправить</div>
+                </button>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-content">
+                <div class="footer-content-item"></div>
+                <div class="footer-content-nav">
+                    <div class="footer-content-nav-item">главная</div>
+                    <div class="footer-content-nav-item">о компании</div>
+                    <div class="footer-content-nav-item">фундаменты</div>
+                    <div class="footer-content-nav-item">услуги</div>
+                    <div class="footer-content-nav-item">работы</div>
+                    <div class="footer-content-nav-item">контакты</div>
+                </div>
+                <div class="footer-content-icons">
+                    <i class="fa fa-vk" aria-hidden="true"></i>
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="made-by-web-progress">Сделано в <u>Web-Progress</u></div>
+        </footer>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="test.js"></script>
+
+</html>
