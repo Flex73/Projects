@@ -30,7 +30,7 @@ body {
     .nav-menu {
         width: 540px;
         margin-top: 32px;
-        margin-left: 130px;
+        margin-left: 145px;
         margin-right: 155px;
         display: flex;
         justify-content: space-between;
@@ -42,6 +42,7 @@ body {
 
         .nav-menu-item {
             cursor: pointer;
+            font-weight: bold;
         }
 
         .nav-menu-item:hover {
@@ -70,126 +71,101 @@ body {
     height: 591px;
     width: @content-width;
 
-    .jumbotron-content {
-        height: 177px;
-        width: 100%;
-        margin-top: 90px;
-        display: flex;
-
-        .jumbotron-content-first-block {
-            width: 32.4%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-
-                .jumbotron-content-first-block-title {
-                    font-size: 19.5px;
-                    margin-left: 70px;
-                }
-
-                .jumbotron-content-first-block-descr {
-                    text-align: center;
-                    font-size: 12px;
-                    margin-left: 50px;
-                    margin-right: 90px;
-                }
-
-                .jumbotron-content-first-block-button {
-                    display: flex;
-                    justify-content: center;
-                    margin-right: 50px;
-                }
-        }
-        .jumbotron-content-second-block {
-            width: 35.5%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-
-            .jumbotron-content-second-block-title {
-                font-size: 19.5px;
-                margin-left: 120px;
-            }
-
-            .jumbotron-content-second-block-descr {
-                text-align: center;
-                font-size: 12px;
-                margin-left: 90px;
-                margin-right: 70px;
-            }
-
-            .jumbotron-content-second-block-button {
-                display: flex;
-                justify-content: center;
-            }
-        }
-        .jumbotron-content-third-block {
-            width: 32%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-
-            .jumbotron-content-third-block-title {
-                font-size: 19.5px;
-                margin-left: 120px;
-            }
-
-            .jumbotron-content-third-block-descr {
-                text-align: center;
-                font-size: 12px;
-                margin-left: 100px;
-                margin-right: 40px;
-            }
-
-            .jumbotron-content-third-block-button {
-                display: flex;
-                justify-content: center;
-                margin-left: 40px;
-            }
-        }
-    }
-
-    .display-3 {
-        margin-left: 300px;
-        margin-right: 300px;
-        text-align: center;
+    .building-title {
+        position: absolute;
+        padding-top: 70px;
+        padding-left: 28%;
+        padding-right: 35%;
+        line-height: 60px;
         font-weight: bold;
-        font-family: 'Comfortaa', cursive;
-        font-size: 60px;
-        line-height: 67px;
+        font-size: 70px;
+        z-index: 3;
+        text-align: center;
+        color: white;
+        cursor: default;
     }
 
-
-    .lead {
+    .building-content {
+        width: 1340px;
+        height: 591px;
         display: flex;
-        justify-content: center;
-        width: 170px;
-        height: 50px;
+        justify-content: column;
+        text-align: center;
+
+        .building-content-first-block, 
+        .building-content-second-block, 
+        .building-content-third-block {
+            padding-top: 290px;
+            padding-left: 100px;
+            padding-right: 100px;
+            padding-bottom: 130px;
+            cursor: default;
+            color: white;
+            font-weight: bold;
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            opacity: 0.5;
+        }
+
+        .building-content-first-block:hover,
+        .building-content-second-block:hover,
+        .building-content-third-block:hover {
+            opacity: 1;
+        }
+
+        .building-content-first-block-title:hover,
+        .building-content-second-block-title:hover,
+        .building-content-third-block-title:hover {
+            color: green;
+        }
 
         .btn {
-            width: 170px;
-            height: 50px;
             background-color: green;
-            border-color: green;
-            border: 2px solid green;
-            border-radius: 20px;
-            z-index: 2;
-            overflow: hidden;
-            display: block;
-            transition: all 500ms ease;
+            border: 3px solid green;
+            color: white;
+            cursor: pointer;
+            border-radius: 25px;
         }
 
         .btn:hover {
-            width: 170px;
-            box-shadow: inset 0 0 0 1px green;
-            background: rgba(0,0,0,0);
+            background-color: transparent;
+            color:white;
+            box-shadow: 0px 6px 0px rgba(0, 0, 0, 0.8);
+        }
+
+    .building-content-first-block {
+        background-image: url('img/fundament1.jpg');
+        z-index: 2;
+        width: 33.3%;
+        
+        .building-content-first-block-descr {
+            font-size: 12px;
         }
     }
 
-    .card-img-top {
-        height: 551px;
-        width: 445px;
+    .building-content-second-block {
+        background-image: url('img/fundament2.jpg');
+        z-index: 2;
+        width: 33.3%;
+
+        .building-content-second-block-descr {
+            font-size: 12px;
+        }
     }
+
+    .building-content-third-block {
+        background-image: url('img/fundament3.jpg');
+        z-index: 2;
+        width: 33.3%;
+
+        .building-content-third-block-descr {
+            font-size: 12px;
+        }
+    }
+}
 }
 
 .advantage {
@@ -202,15 +178,6 @@ body {
         font-size: 34px;
     }
 
-    .carousel {
-        margin-top: 36px;
-        width: @content-width;
-
-        .carousel-item img {
-            height: 420px;
-            width: 100%;
-        }
-    }
 }
 
 .tagline {
@@ -271,22 +238,6 @@ body {
         font-size: 33px;
     }
 
-    .our-industry-gallery {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-        
-        .card-img {
-            height: 270px;
-            width: 250px;
-        }
-
-        .text-muted {
-            background-color: white;
-            height: 100px;
-        }
-    }
-
     .our-industry-button {
         height: 50px;
         display: flex;
@@ -325,6 +276,7 @@ body {
         margin-top: 8px;
 
         .btn {
+            position: absolute;
             width: 140px;
             height: 47px;
             color: black;
@@ -426,7 +378,13 @@ footer {
             justify-content: space-between;
 
             .footer-content-nav-item {
-                cursor: pointer !important;
+                position: relative;
+                cursor: pointer;
+                font-weight: bold;
+            }
+
+            .footer-content-nav-item:hover {
+                color: green;
             }
         }
 

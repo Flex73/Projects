@@ -1,4 +1,8 @@
 $(document).ready(function() {
+    $('.advantage-content').slick({});
+});
+
+$(document).ready(function() {
     $(".aboutCompanyButton").click(function() { alert('Модальное окно') });
 
     $("input[type=button]").click(function() { $(".aboutCompanyButton".click()) });
@@ -25,7 +29,5 @@ $('#exampleModal').on('show.bs.modal', function(event) {
                 var modal = $(this)
                 modal.find('.modal-title').text('New message to ' + recipient) modal.find('.modal-body input').val(recipient)
             });
-
-        $('.carousel').carousel()
 
         $('#collapseExample').collapse()
