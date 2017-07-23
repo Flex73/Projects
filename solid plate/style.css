@@ -4,7 +4,7 @@ body {
 .temp-back {
   min-width: 800px;
   max-width: 1340px;
-  opacity: 0.4;
+  opacity: 0.1;
   position: absolute;
 }
 .nav {
@@ -300,17 +300,21 @@ footer {
   width: 1340px;
 }
 footer .footer-content {
-  height: 183px;
+  height: 123px;
   width: 540px;
-  margin-bottom: 30px;
+  margin-top: 112px;
+  margin-bottom: 50px;
   margin-left: 400px;
   margin-right: 400px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 footer .footer-content .footer-content-item {
+  display: flex;
+  justify-content: flex-end;
+  height: 80px;
   background-image: url('img/logo.jpg');
   width: 200px;
   height: 60px;
